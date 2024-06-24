@@ -1,0 +1,35 @@
+.radio-section{
+    background-color: #015a5a;
+}
+/* .player-mytuner-logo{
+    display: none !important;
+} */
+.radio-section-conrtainer{
+    margin:0 auto;
+    padding: 10px 10px;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    h1{
+        text-align: center;
+        color:#F4A460;
+        font-weight: bold;
+    }
+}
+
+.player-radio-name{
+    margin-left: 10px;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    display: inline-block; /* Изменение на inline-block */
+    white-space: normal; /* Позволяет перенос текста */
+}
+
+input[type=range][orient=vertical] {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    -moz-appearance: slider-vertical; /* Firefox */
+    appearance: slider-vertical; /* Standard */
+    width: 8px;
+    padding: 0 5px;
+}
