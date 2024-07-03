@@ -23,6 +23,7 @@
     font-weight: bold;
     display: inline-block; /* Изменение на inline-block */
     white-space: normal; /* Позволяет перенос текста */
+font-size: 15px !important;
 }
 
 input[type=range][orient=vertical] {
