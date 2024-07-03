@@ -17,6 +17,9 @@
     }
 }
 
+.mytuner-widget{
+    max-width: 350px !important;
+}
 .player-radio-name{
     margin-left: 10px;
     color: rgb(61, 61, 61);
