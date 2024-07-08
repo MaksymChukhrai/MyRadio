@@ -5,6 +5,7 @@
     display: none !important;
 } */
 .radio-section-container{
+    max-width: 400px;
     margin:0 auto;
     padding: 10px 10px;
     display:flex;
@@ -14,11 +15,13 @@
         text-align: center;
         color:#F4A460;
         font-weight: bold;
+        max-width: 350px;
     }
 }
 
 .mytuner-widget{
     max-width: 350px !important;
+    margin: 0 auto;
 }
 .player-radio-name{
     margin-left: 10px;
