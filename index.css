@@ -30,6 +30,8 @@
     display: inline-block; /* Изменение на inline-block */
     white-space: normal; /* Позволяет перенос текста */
 font-size: 15px !important;
+line-height: 1.2 !important;
+white-space: revert !important;
 }
 
 input[type=range][orient=vertical] {
@@ -42,5 +44,15 @@ input[type=range][orient=vertical] {
 }
 
 .player-radio-link{
-    width: 220px; 
+    width: 230px !important; 
+    height: 100%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* line-height: 65px; */
+    cursor: pointer;
+    display: flex !important;
+    flex-direction: row !important;
+    width: auto;
+    align-content: center;
+    align-items: center;
 }
