@@ -56,3 +56,16 @@ input[type=range][orient=vertical] {
     align-content: center;
     align-items: center;
 }
+
+@media screen and (min-width: 375px) {
+    .radio-section-container{
+    h1 {
+        margin: 0 auto;
+        max-width: 350px;
+     }
+}
+.mytuner-widget{
+    margin: 0 auto !important;
+    max-width: 350px !important;
+}
+}
