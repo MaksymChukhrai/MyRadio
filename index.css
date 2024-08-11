@@ -43,6 +43,10 @@ input[type=range][orient=vertical] {
     padding: 0 5px;
 }
 
+#w63DqsK\/w6HCu8OHwq7Drmc2w6peeioqw417wr3CvmBItop-bar > a.player-radio-link > span > span:nth-child(3) {
+    display: none;
+}
+
 .player-radio-link{
     width: 230px !important; 
     height: 100%;
@@ -67,5 +71,8 @@ input[type=range][orient=vertical] {
 .mytuner-widget{
     margin: 0 auto !important;
     max-width: 350px !important;
+}
+#w63DqsK\/w6HCu8OHwq7Drmc2w6peeioqw417wr3CvmBItop-bar > a.player-radio-link > span > span:nth-child(3) {
+    display: none;
 }
 }
