@@ -1,4 +1,4 @@
-.radio-section{
+body{
     background-color: #015a5a;
 }
 /* .player-mytuner-logo{
@@ -7,16 +7,34 @@
 .radio-section-container{
     max-width: 400px;
     margin:0 auto;
-    padding: 10px 10px;
+    padding: 10px 10px 0px 10px;
     display:flex;
     flex-direction: column;
     gap:15px;
     h1{
         text-align: center;
+        font-family: "Montserrat";
         color:#F4A460;
-        font-weight: bold;
         max-width: 350px;
     }
+}
+
+.about__dev{
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    h3{
+        margin: 0;
+    }
+    a{
+        font-family: "Montserrat";
+    color: #F4A460;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+
 }
 
 .mytuner-widget{
@@ -50,10 +68,8 @@ input[type=range][orient=vertical] {
 .player-radio-link{
     width: 230px !important; 
     height: 100%;
-    cursor: pointer;
-    /* display: inline-block; */
+     /* display: inline-block; */
     /* line-height: 65px; */
-    cursor: pointer;
     display: flex !important;
     flex-direction: row !important;
     width: auto;
