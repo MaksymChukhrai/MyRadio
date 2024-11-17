@@ -67,6 +67,9 @@ input[type=range][orient=vertical] {
         margin: 0 auto;
         max-width: 350px;
      }
+     .volume-controls{
+        display: none;
+     }
 }
 .mytuner-widget{
     margin: 0 auto !important;
