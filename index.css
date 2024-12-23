@@ -1,9 +1,9 @@
 body {
   background-color: #015a5a;
 }
-/* .player-mytuner-logo{
+.player-mytuner-logo{
     display: none !important;
-} */
+}
 .radio-section-container {
   max-width: 400px;
   margin: 0 auto;
