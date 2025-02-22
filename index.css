@@ -66,6 +66,9 @@ input[type="range"][orient="vertical"] {
   > span:nth-child(3) {
   display: none;
 }
+.main-play-button{
+  float:left;
+}
 
 .player-radio-link {
   width: 230px !important;
