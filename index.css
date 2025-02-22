@@ -77,10 +77,13 @@ input[type="range"][orient="vertical"] {
   width: auto;
   align-content: center;
   align-items: center;
-  img{
-    margin-top: 0 ;
-  }
 }
+.player-radio-link>img {
+  margin-top: 1px !important;
+
+}
+
+
 
 @media screen and (min-width: 375px) {
   .radio-section-container {
