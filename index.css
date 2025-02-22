@@ -1,8 +1,8 @@
 body {
   background-color: #015a5a;
 }
-.player-mytuner-logo{
-    display: none !important;
+.player-mytuner-logo {
+  display: none !important;
 }
 .radio-section-container {
   max-width: 400px;
@@ -66,8 +66,8 @@ input[type="range"][orient="vertical"] {
   > span:nth-child(3) {
   display: none;
 }
-.main-play-button{
-  float:left;
+.main-play-button {
+  float: left;
 }
 
 .player-radio-link {
@@ -81,20 +81,23 @@ input[type="range"][orient="vertical"] {
   align-content: center;
   align-items: center;
 }
-.player-radio-link>img {
+.player-radio-link > img {
   margin-top: 1px !important;
-
 }
-.player-radio-name{
-  margin-left: 10px; 
-  color: rgb(61, 61, 61); 
+.player-radio-name {
+  margin-left: 10px;
+  color: rgb(61, 61, 61);
   font-size: 20px;
   float: left;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+.radio-descr > img {
+  float: left;
+  height: 74px;
+  box-shadow: black 0px 0px 3px -1px;
+}
 
 @media screen and (min-width: 375px) {
   .radio-section-container {
