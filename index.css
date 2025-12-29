@@ -60,12 +60,20 @@ input[type="range"][orient="vertical"] {
   padding: 0 5px;
 }
 
-#w63DqsK\/w6HCu8OHwq7Drmc2w6peeioqw417wr3CvmBItop-bar
+/* #w63DqsK\/w6HCu8OHwq7Drmc2w6peeioqw417wr3CvmBItop-bar
+  > a.player-radio-link
+  > span
+  > span:nth-child(3) {
+  display: none;
+} */
+
+#w7jDqsOLwqJtwqnDqEAqwrxnKnjDn8OGwqLCtcOfL8K5w4w\=top-bar
   > a.player-radio-link
   > span
   > span:nth-child(3) {
   display: none;
 }
+
 .main-play-button {
   float: left;
 }
