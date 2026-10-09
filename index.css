@@ -132,6 +132,7 @@ input[type="range"][orient="vertical"] {
     margin: 0 10px 0 6px !important;
   }
   .mytuner-widget .player-radio-link {
+    text-decoration: none !important;
     flex: 1 1 0 !important;
     width: auto !important;
     min-width: 0 !important; /* без этого flex-элемент не сжимается меньше контента */
