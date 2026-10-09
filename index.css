@@ -60,13 +60,6 @@ input[type="range"][orient="vertical"] {
   padding: 0 5px;
 }
 
-/* #w63DqsK\/w6HCu8OHwq7Drmc2w6peeioqw417wr3CvmBItop-bar
-  > a.player-radio-link
-  > span
-  > span:nth-child(3) {
-  display: none;
-} */
-
 #w7jDqsOLwqJtwqnDqEAqwrxnKnjDn8OGwqLCtcOfL8K5w4w\=top-bar
   > a.player-radio-link
   > span
@@ -106,7 +99,55 @@ input[type="range"][orient="vertical"] {
   height: 74px;
   box-shadow: black 0px 0px 3px -1px;
 }
+/* ---------------------------------------------------------------
+   Узкие экраны (< 375px, например iPhone SE / 5 / 7 = 320px).
+   Виджет mytuner задаёт ширины инлайном (width: calc(...)), а наш
+   .player-radio-link выше имеет фиксированные 230px !important —
+   на 320px строка не вмещает кнопку + 230px и ссылка падает вниз.
+   Решение: делаем top-bar flex-контейнером, а ссылке даём всё
+   оставшееся место (flex: 1 1 0 + min-width: 0).
+   Всё внутри media query => 375px и шире не меняется.
+   --------------------------------------------------------------- */
+@media screen and (max-width: 374.98px) {
+  body {
+    margin: 0;
+  }
+  .radio-section-container {
+    padding: 10px 8px 0;
+  }
+  .radio-section-container h1 {
+    font-size: 1.75rem; /* 28px — заголовок помещается в одну строку */
+    margin: 0 auto;
+  }
 
+  /* строка плеера: [play] [ссылка на всё оставшееся место] */
+  .mytuner-widget > div[id$="top-bar"] {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+  .mytuner-widget .main-play-button {
+    flex: 0 0 40px !important;
+    float: none !important;
+    margin: 0 10px 0 6px !important;
+  }
+  .mytuner-widget .player-radio-link {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important; /* без этого flex-элемент не сжимается меньше контента */
+  }
+  .mytuner-widget .player-radio-link > img {
+    flex: 0 0 auto !important; /* логотип не сжимаем и не искажаем */
+    float: none !important;
+  }
+  .mytuner-widget .player-radio-name {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    float: none !important;
+    width: auto !important;
+    overflow-wrap: anywhere;
+  }
+}
 @media screen and (min-width: 375px) {
   .radio-section-container {
     h1 {
